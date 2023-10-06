@@ -19,7 +19,7 @@ class FormCompo extends Component {
     }
     goBack = () => {
         this.setState({
-            showFormCompo: !this.state.showFormCompo
+            showFormCompo: true
         })
     }
     changeHandler = (e) => {

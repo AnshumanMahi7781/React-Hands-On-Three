@@ -30,7 +30,7 @@ import React, { Component } from 'react'
                     }
                 </tbody>
             </table>
-            <button className='backButton' type="button" onClick={() =>this.props.goBack()}>Back</button>
+            <button className='backButton' type="button" onClick={this.props.goBack}>Back</button>
         </div>
     )
   }
