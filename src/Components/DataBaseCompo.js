@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-function DataBaseCompo(props) {
+ class DataBaseCompo extends Component {
+    constructor(props){
+        super(props);
+    }
+  render() {
     return (
         <div className="dataContainer">
             <h2 className='dataContainerHeading'>EMPLOYEE FEEDBACK DATA </h2>
@@ -14,7 +18,7 @@ function DataBaseCompo(props) {
                 </thead>
                 <tbody>
                     {
-                        props.empDatabase.map((emp, index) => {
+                        this.props.empDatabase.map((emp, index) => {
                             return (
                                 <tr key={index}>
                                     <td>{emp.empName}</td>
@@ -26,9 +30,10 @@ function DataBaseCompo(props) {
                     }
                 </tbody>
             </table>
-            <button className='backButton' type="button" onClick={() => props.goBack()}>Back</button>
+            <button className='backButton' type="button" onClick={() =>this.props.goBack()}>Back</button>
         </div>
     )
+  }
 }
 
 export default DataBaseCompo
