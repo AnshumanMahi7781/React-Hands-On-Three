@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.MainContainer {
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #ffffff 0%, #274060 74%);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+
+form {
+  align-self: center;
+  border: 2px solid rgba(255, 255, 255, 0.096);
+  background-color: rgba(224, 255, 255, 0.096);
+  border-radius: 10px;
+  width: 40%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.dataContainer {
+  background-color: #274060d2;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  padding: 1em;
+}
+
+.dataContainerHeading {
+  color: white;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid white;
+  padding: 0em 1em 1em 1em;
+}
+
+.backButton {
+  margin: 30px 0  0 40%;
+  border: none;
+  width: 90px;
+  height: 45px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #130f40;
+  color: white;
+}
+.backButton:hover{
+  cursor: pointer;
+  background-color: #1c1849;
+}
+
+.formRow {
+  padding: 0em 1em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.formRow label {
+  width: 175px;
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.formRow .inputBox {
+  width: 350px;
+}
+
+.inputBox input {
+  border: none;
+  outline: none;
+  padding: 1em;
+  width: 100%;
+  background-color: transparent;
+  border-bottom: 2px solid white;
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+.inputBox input::placeholder {
+  color: tomato;
+}
+
+.inputBox .Error {
+  width: 100%;
+  background-color: tomato;
+  color: white;
+  font-style: italic;
+  font-weight: bolder;
+  padding: 0.2em 1em;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+form button {
+  width: 225px;
+  padding: 1em;
+  border-radius: 10px;
+  border: none;
+  font-weight: bolder;
+  font-size: 14px;
+  background-color: lightgray;
+}
+
+form button:hover {
+  cursor: pointer;
+  background-color: rgb(187, 186, 186);
+}
+
+
+table {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+thead {
+  background-color: #130f40;
+  color: #ED0800;
+}
+
+td,
+th {
+  font-size: 18px;
+  padding: 0.5em;
+
+}
+
+
+
+@media screen and (max-width: 1000px) {
+
+  h2 {
+    font-size: 18px;
+  }
+
+  form {
+    width: 60%;
+    height: 650px;
+  }
+
+  .formRow label {
+    font-size: 16px;
+    text-align: left;
+  }
+
+
+  .inputBox {
+    width: 60%;
+  }
+
+  .dataContainer {
+    width: 100%;
+    padding: 1em 0em;
+    gap: 20px;
+  }
+
+  .inputBox .Error {
+    font-size: 14px;
+  }
+
+  td,
+  th {
+    font-size: 16px;
+    padding: 0.5em;
+
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+
+  form {
+    width: 100%;
+    height: 650px;
+  }
+}
